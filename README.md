@@ -38,16 +38,12 @@ Follow these steps to get the application running locally.
     ```
 
 4.  **Seed the Database**
-    Run the seed script to populate the database with sample data.
-    ```sh
-    python server/seed.py
-    ```
+    python -m server.seed
 
 5.  **Run the Application**
-    ```sh
-    python server/app.py
-    ```
-    The API will be available at `http://127.0.0.1:5555`.
+    flask --debug run --port 5555
+    The API will now be available at http://127.0.0.1:5555.
+
 
 ## API Endpoints
 
